@@ -1,8 +1,9 @@
 {
-  "name": "ngx-materialize",
+  "name": "@aspirejo/ngx-materialize",
+  "version": "0.1.0",
   "description": "An Angular wrap around Materialize library",
   "license": "Apache-2.0",
-  "repository": "sherweb/ngx-materialize",
+  "repository": "AspireJo/ngx-materialize",
   "keywords": [
     "angular",
     "ng",
@@ -29,7 +30,7 @@
     "gh-pages:build": "yarn build:demo --prod --aot --base-href /ngx-materialize/",
     "gh-pages:deploy": "angular-cli-ghpages --dir=\"dist/demo\" --name=\"CircleCI\" --email=\"circleci@email.com\" --no-silent",
     "heroku-postbuild": "yarn install && yarn build:demo --prod --aot",
-    "publish:lib": "npm publish ./dist/lib"
+    "publish:lib": "npm publish --access public ./dist/lib"
   },
   "dependencies": {
     "@angular/animations": "^6.0.0",
