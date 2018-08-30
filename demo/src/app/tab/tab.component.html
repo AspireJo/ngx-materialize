@@ -1,3 +1,9 @@
+<style>
+
+.tabs .indicator{
+  height: 25px !important;
+}
+  </style>
 <h3>Tab</h3>
 <div class="section">
   <app-code-snippet>import &#123; MzTabModule &#125; from 'ngx-materialize'</app-code-snippet>
@@ -8,7 +14,7 @@
   <div class="row m-valign-wrapper">
     <div class="col s12 m6">
       <mz-tab>
-        <mz-tab-item [class]="'col s12'" [label]="'Таб 1'">Tab 1</mz-tab-item>
+        <mz-tab-item [class]="'col s12'" [label]="'Таb 1'">Tab 1</mz-tab-item>
         <mz-tab-item [class]="'col s12'" [label]="'Tab 2'">Tab 2</mz-tab-item>
         <mz-tab-item [class]="'col s12'" [label]="'Tab 3'">Tab 3</mz-tab-item>
       </mz-tab>
@@ -16,6 +22,24 @@
 
     <p class="col s12 m6">
       Default behavior from tab has variable tab width.
+    </p>
+  </div>
+</div>
+
+<div class="section">
+  <h5 class="light">Customized tab</h5>
+
+  <div class="row m-valign-wrapper">
+    <div class="col s12 m6">
+      <mz-tab [tabClass]="'cyan lighten-4'" [itemClass]="'grey-text text-darken-3'">
+        <mz-tab-item [class]="'col s12'" [label]="'Themed Таb 1'">Tab 1</mz-tab-item>
+        <mz-tab-item [class]="'col s12'" [label]="'Themed Tab 2'">Tab 2</mz-tab-item>
+        <mz-tab-item [class]="'col s12'" [label]="'Themed Tab 3'">Tab 3</mz-tab-item>
+      </mz-tab>
+    </div>
+
+    <p class="col s12 m6">
+      Customizable classes with default behavior from tab has variable tab width.
     </p>
   </div>
 </div>

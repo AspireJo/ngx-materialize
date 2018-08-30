@@ -22,6 +22,8 @@ export class MzTabComponent implements AfterViewInit {
   @Input() onShow: Function;
   @Input() responsiveThreshold: number;
   @Input() swipeable: boolean;
+  @Input() tabClass: string;
+  @Input() itemClass: string;
 
   @ViewChild('tabs') tabs: ElementRef;
   @ContentChildren(MzTabItemComponent) tabItems: QueryList<MzTabItemComponent>;

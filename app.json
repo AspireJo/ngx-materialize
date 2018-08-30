@@ -1,5 +1,5 @@
 {
-  "name": "ngx-materialize",
+  "name": "@aspirejo/ngx-materialize",
   "scripts": {},
   "env": {
     "NODE_ENV": {
